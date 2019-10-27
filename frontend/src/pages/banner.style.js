@@ -35,6 +35,33 @@ const BannerWrapper = styled.section`
   }
 `;
 
+export const BannerObject = styled.div`
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  .objectWrapper {
+    margin-left: auto;
+    position: relative;
+    .dashboardWrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .chatObject {
+        position: absolute;
+        top: 20px;
+        left: 120px;
+      }
+    }
+  }
+`;
+
 export const SearchWrapper = styled.div`
   @media (min-width: 576px) {
     display: flex;

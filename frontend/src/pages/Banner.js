@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'react-icons-kit';
 import Box from '../components/Box';
+// import Image from '../components/Image';
 import Text from '../components/Text';
 import Heading from '../components/Heading';
 import Button from '../components/Button';
@@ -14,9 +15,11 @@ import BannerWrapper, {
   List,
   DiscountWrapper,
   DiscountLabel,
+  BannerObject
 } from './banner.style';
 import { Link } from 'react-router-dom';
 import { search } from 'react-icons-kit/feather/search';
+// import BannerObject1 from '../assets/image/saas/banner/bannerObject1.png';
 
 import { DOMAIN_NAMES, DOMAIN_PRICE } from '../data/Hosting/data';
 
@@ -39,7 +42,7 @@ const BannerSection = ({
           <Box {...textArea}>
             <DiscountWrapper>
               <DiscountLabel>
-                
+
                 <Text
                   {...discountText}
                   content="video compression made "
@@ -50,15 +53,15 @@ const BannerSection = ({
             </DiscountWrapper>
             <Heading
               {...title}
-              content="Intelligent video compression."
+              content="Rethink video streaming based on real data."
             />
             <Text
               {...description}
-              content="Re"
+              content="Recast is a new take on video compression that uses artificial intelligence to independently learn based on your data, enabling more efficient video streaming and storage in any domain."
             />
           </Box>
           <Box {...searchArea}>
-            
+
           </Box>
         </Box>
       </Container>
@@ -122,7 +125,7 @@ BannerSection.defaultProps = {
   discountAmount: {
     fontSize: ['13px', '14px', '14px', '14px', '14px'],
     fontWeight: '600',
-    color: '#eb4d4b',
+    color: '#168EEB',
     mb: 0,
     as: 'span',
     mr: '0.4em',

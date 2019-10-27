@@ -39,23 +39,23 @@ export const Features = [
   {
     id: 1,
     icon: 'flaticon-creative',
-    title: 'Upload Video',
+    title: 'Upload Videos',
     description:
-      'Automate time consuming tasks like organising expenses ,tracking your time and following up with clients ',
+      'Load your data into the Recast ecosystem to get the process started.',
   },
   {
     id: 2,
-    icon: 'flaticon-briefing',
-    title: 'Original Video',
+    icon: 'flaticon-flask',
+    title: 'Learn',
     description:
-      'Want to surprice your clients with professional looking invoices ? Then you are some clicks behind .',
+      'Watch our models learn to represent your videos. Our encoders and decoders are trained synchronously to best fit the data.',
   },
   {
     id: 3,
-    icon: 'flaticon-flask',
+    icon: 'flaticon-briefing',
     title: 'Compressed Video',
     description:
-      'Very Simple and intuitive. So you have to spend less time in paperwork and impress your customer with looks',
+      'Compare the original and compressed videos side by side to see the magic in action.',
   },
 ];
 
@@ -65,24 +65,20 @@ export const Footer_Data = [
     menuItems: [
       {
         url: '#',
-        text: 'Support Center',
+        text: 'Sidharth Potdar',
       },
       {
         url: '#',
-        text: 'Customer Support',
+        text: 'Meghna Dash',
       },
       {
         url: '#',
-        text: 'About Us',
+        text: 'Lui Suzuki-Williams',
       },
       {
         url: '#',
-        text: 'Copyright',
-      },
-      {
-        url: '#',
-        text: 'Popular Campaign',
-      },
+        text: 'Sneha Kadiyala',
+      }
     ],
   },
   {
@@ -164,42 +160,42 @@ export const Service = [
     icon: 'flaticon-briefing',
     title: 'Efficient Compression',
     description:
-      'We are specialized at custom Saas Application Development and special features .',
+      'We compress your videos into incredibly tight spaces, as low as 20% of the original size.',
   },
   {
     id: 2,
-    icon: 'flaticon-trophy',
-    title: 'Artificial Intelligence',
+    icon: 'flaticon-atom',
+    title: 'Intelligent Encodings',
     description:
-      'We are globally recognised for our services and won a lot of prices around the world .',
+      'Our deep learning models are built to best represent your data.',
   },
   {
     id: 3,
-    icon: 'flaticon-atom',
+    icon: 'flaticon-trophy',
     title: 'Lightweight Encoding',
     description:
-      'LiteSpeed Web Server known for its high performance and low resource consumption.',
+      'We work to get your data back to you as soon as possible.',
   },
   {
     id: 4,
     icon: 'flaticon-ruler',
     title: 'Bandwidth Reduction',
     description:
-      'Client Satisfaction is our first priority and We are best at it .Keep In Touch.',
+      'Reduce your bandwidth footprint when streaming any video.',
   },
   {
     id: 5,
     icon: 'flaticon-creative',
     title: 'Real-time Streaming',
     description:
-      'We provide the best UI/UX Design by following the latest trends of the market  .',
+      'Get your data when you need it, not after minutes of buffering.',
   },
   {
     id: 6,
     icon: 'flaticon-conversation',
     title: 'Domain Specific',
     description:
-      'A Dedicated support team is always ready to provide best support to our customers.',
+      'Our models learn based on your specific video domains, but generalize to larger sets.',
   },
 ];
 
