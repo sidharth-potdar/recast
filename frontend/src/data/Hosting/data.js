@@ -129,24 +129,20 @@ export const FOOTER_WIDGET = [
     menuItems: [
       {
         url: '#',
-        text: 'Support Center',
+        text: 'Sidharth Potdar',
       },
       {
         url: '#',
-        text: 'Customer Support',
+        text: 'Meghna Dash',
       },
       {
         url: '#',
-        text: 'About Us',
+        text: 'Lui Suzuki-Williams',
       },
       {
         url: '#',
-        text: 'Copyright',
-      },
-      {
-        url: '#',
-        text: 'Popular Campaign',
-      },
+        text: 'Sneha Kadiyala',
+      }
     ],
   },
   {
