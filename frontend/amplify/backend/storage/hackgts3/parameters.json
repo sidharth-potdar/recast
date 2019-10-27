@@ -1,0 +1,13 @@
+{
+    "bucketName": "hackgtbucket",
+    "authPolicyName": "s3_amplify_2ce0286f",
+    "unauthPolicyName": "s3_amplify_2ce0286f",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "rw"
+}

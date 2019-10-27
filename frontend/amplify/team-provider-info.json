@@ -1,0 +1,19 @@
+{
+    "hackgtaws": {
+        "awscloudformation": {
+            "AuthRoleName": "hackgt-20191026142410-authRole",
+            "UnauthRoleArn": "arn:aws:iam::065047602817:role/hackgt-20191026142410-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::065047602817:role/hackgt-20191026142410-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "hackgt-20191026142410-deployment",
+            "UnauthRoleName": "hackgt-20191026142410-unauthRole",
+            "StackName": "hackgt-20191026142410",
+            "StackId": "arn:aws:cloudformation:us-east-1:065047602817:stack/hackgt-20191026142410/ce248270-f81d-11e9-b649-0e24761bd22a"
+        },
+        "categories": {
+            "auth": {
+                "cognito3a3fe841": {}
+            }
+        }
+    }
+}
