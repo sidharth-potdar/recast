@@ -9,7 +9,7 @@ import Button from '../components/Button';
 import Image from '../components/Image';
 import Container from '../components/UI/Container';
 import UploadToS3 from '../actions/UploadToS3';
-import Processing from '../actions/Processing';
+import Compressed from '../actions/Compressed';
 
 import {
   TimelineWrapper,
@@ -53,7 +53,7 @@ const TimelineSection = ({
             <UploadToS3 />
           </Box>
           <Box {...col}>
-            <Processing />
+            <Compressed />
           </Box>
         </Box>
       </Container>

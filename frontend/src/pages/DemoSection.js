@@ -7,6 +7,7 @@ import FeatureBlock from '../components/FeatureBlock';
 import { Features } from '../data/Saas';
 import Container from '../components/UI/Container';
 import FeatureSectionWrapper from './featureSection.style';
+import UploadPage from './UploadPage';
 
 const FeatureSection = ({
   row,
@@ -21,7 +22,7 @@ const FeatureSection = ({
   blockWrapperStyle,
 }) => {
   return (
-    <FeatureSectionWrapper id="service_section">
+    <FeatureSectionWrapper id="demo_section">
       <Container>
         <Box {...sectionHeader}>
           <Text content="DEMO" {...sectionSubTitle} />
@@ -47,6 +48,7 @@ const FeatureSection = ({
             </Box>
           ))}
         </Box>
+        <UploadPage/>
       </Container>
     </FeatureSectionWrapper>
   );
@@ -92,7 +94,7 @@ FeatureSection.defaultProps = {
   // feature row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
+    flexWrap: 'none',
   },
   // feature col default style
   col: {
