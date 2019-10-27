@@ -50,7 +50,7 @@ def preprocess(path, bucketname, old_name):
         image = tr(frames[i, :, :, :])
         image.save("%07d.jpg" % i)
     subprocess.call(["ffmpeg","-y","-r",str(fps),"-i", "%07d.jpg","-vcodec","libx264", "-qscale","5", "-r", str(fps), "data/"+name])
-    s3.meta.client.upload_file("data/" + name, bucketname, "staging/" + old_name.replace("old/", ""))
+    s3.meta.client.upload_file("data/" + name, bucketname, "public/staging/" + old_name.replace("public/old/", ""))
 
     return frames
 
@@ -82,10 +82,11 @@ def test():
         new_filepath = compress(frames)
         print("Compressed and wrote video")
 
-        s3.meta.client.upload_file("data/" + new_filepath, bucketname, "new/" + filepath.replace("old/", ""))
+        s3.meta.client.upload_file("data/" + new_filepath, bucketname, "public/new/" + filepath.replace("public/old/", ""))
+        print(filepath.replace("public/old/", ""))
         print("Uploaded video")
 
-        return json.dumps({"path": "new/" + filepath.replace("old/", "")})
+        return json.dumps({"path": "public/new/" + filepath.replace("public/old/", "")})
 
 if __name__ == '__main__':
     app.run(debug=True)
