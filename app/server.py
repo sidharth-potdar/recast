@@ -14,13 +14,7 @@ from compressor import DeepAutoencoder
 import boto3
 import subprocess
 
-access_key = 'AKIAJHJWVEFPEN47A7WA'
-secret_key = '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'
-
-s3 = boto3.resource('s3',
-                        aws_access_key_id=access_key,
-                        aws_secret_access_key=secret_key
-                    )
+s3 = boto3.resource('s3')
 
 model = DeepAutoencoder()
 model = torch.load("model.pth", map_location="cpu")
