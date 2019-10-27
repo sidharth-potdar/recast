@@ -8,7 +8,7 @@ import Heading from '../components/Heading';
 import Button from '../components/Button';
 import Input from '../components/Input';
 import Select from '../components/Select';
-import Container from '../components/UI/Container';
+// import Container from '../components/UI/Container';
 import ParticlesComponent from '../containers/Hosting/Particle';
 import BannerWrapper, {
   SearchWrapper,
@@ -19,7 +19,9 @@ import BannerWrapper, {
 import { Link } from 'react-router-dom';
 import { search } from 'react-icons-kit/feather/search';
 import UploadToS3 from '../actions/UploadToS3';
-import Processing from '../actions/Processing';
+import Original from '../actions/Original';
+import Compressed from '../actions/Compressed';
+import { Container, Row, Col } from 'reactstrap';
 
 const UploadPage = ({
   sectionWrapper,
@@ -38,32 +40,11 @@ const UploadPage = ({
   discountText,
 }) => {
   return (
-    <BannerWrapper id="banner_section">
-      <ParticlesComponent />
-      <Box {...sectionWrapper}>
-        <Container>
-          <Box {...sectionHeader}>
-            <Text {...sectionSubTitle} content="DEMO" />
-            <Heading
-              {...sectionTitle}
-              content="Upload a video to see how Recast works"
-            />
-          </Box>
-          <Box {...row}>
-            <Box {...col} {...imageArea}>
-              <Fade bottom>
-                <UploadToS3 />
-              </Fade>
-            </Box>
-            <Box {...col} {...textArea}>
-              <Processing/>
-            </Box>
-          </Box>
-        </Container>
-      </Box>
-    </BannerWrapper>
-
-
+    <div>
+      <UploadToS3 />
+          <Original />
+          <Compressed />
+    </div>
   );
 };
 

@@ -38,7 +38,7 @@ export const Faq = [
 export const Features = [
   {
     id: 1,
-    icon: 'flaticon-creative',
+    icon: 'flaticon-upload',
     title: 'Upload Video',
     description:
       'Automate time consuming tasks like organising expenses ,tracking your time and following up with clients ',
@@ -52,7 +52,7 @@ export const Features = [
   },
   {
     id: 3,
-    icon: 'flaticon-flask',
+    icon: 'flaticon-creative',
     title: 'Compressed Video',
     description:
       'Very Simple and intuitive. So you have to spend less time in paperwork and impress your customer with looks',

@@ -18,26 +18,35 @@ export default class UploadToS3 extends Component {
 		};
 		this.upload = null;
 		this.uploadToS3 = this.uploadToS3.bind(this);
-
 	};
 
-	uploadToS3() { 
+	uploadToS3() {
+		localStorage.removeItem('video_name');
 		console.log("upload called")
 		console.log(this.upload.files[0])
 		console.log(this.state.isFile)
 		if (this.upload.files[0] != undefined && this.upload.files[0] != null)  {
 			console.log("attempting upload")
-			Storage.put(`${this.upload.files[0].name}`,
-	                this.upload.files[0],
-	                { contentType: this.upload.files[0].type })
+			Storage.put(
+				`old/${this.upload.files[0].name}`,
+				this.upload.files[0],
+                { 	
+                	contentType: this.upload.files[0].type
+                })
 		      .then(result => {
 		      	this.upload = null;
-		        this.setState({ response: "Success uploading file!" });
-		        this.setState({ processing: true})
+		        this.setState({ processing: true});
+		        setTimeout(() => {
+				  localStorage.setItem('video_name', this.state.videoName);
+				}, 5000);
+
+		        
 		        console.log("UPLOADED");
+		        console.log(result);
 		      })
 		      .catch(err => {
 		        this.setState({ response: `Cannot uploading file: ${err}` });
+		        console.log(err);
 		      });
 		}
 	}
